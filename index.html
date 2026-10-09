@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>郴州冬日賞雪 3 晚 3 日快閃行程指南 (12/24夜出發版)</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .chart-container {
+            position: relative;
+            width: 100%;
+            height: 260px;
+            margin: 0 auto;
+        }
+        html { scroll-behavior: smooth; }
+        .nav-btn.active {
+            color: #0284c7;
+            font-weight: 700;
+            border-top: 2px solid #0284c7;
+        }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        button, input { touch-action: manipulation; }
+    </style>
+</head>
+<body class="bg-slate-100 text-slate-800 font-sans antialiased pb-20 select-none">
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-slate-900 via-sky-900 to-indigo-950 text-white sticky top-0 z-40 shadow-md">
+        <div class="px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <span class="text-xl">❄️</span>
+                <div>
+                    <h1 class="text-base font-bold leading-tight">郴州冬日賞雪 3晚3日</h1>
+                    <p class="text-[11px] text-sky-200">12/24 夜放工出發 – 12/27 晚返港</p>
+                </div>
+            </div>
+            <span class="text-xs bg-emerald-500/30 border border-emerald-300/40 text-emerald-200 px-2 py-1 rounded-full font-medium">
+                時間利用極大化
+            </span>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-md mx-auto px-3 py-4 space-y-4">
+
+        <!-- TAB 1: 📅 逐日行程 -->
+        <section id="tab-itinerary" class="tab-content active space-y-4">
+            
+            <!-- Quick Summary Bar -->
+            <div class="bg-white p-3 rounded-xl shadow-sm border border-slate-200 flex justify-between items-center text-xs">
+                <div><span class="text-slate-400">總行程：</span><strong>3晚3日 (12/24夜-27)</strong></div>
+                <div><span class="text-slate-400">交通模式：</span><strong class="text-sky-600">頭尾DiDi + 中間2天包車</strong></div>
+            </div>
+
+            <!-- NIGHT 0 -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                <div class="bg-slate-800 text-white px-4 py-2.5 flex justify-between items-center">
+                    <div>
+                        <span class="text-[10px] font-bold bg-white/20 px-1.5 py-0.5 rounded">Night 0 • 12/24 (四夜)</span>
+                        <h2 class="text-sm font-bold mt-0.5">放工高鐵夜奔郴州 ➔ 入住市區飯店</h2>
+                    </div>
+                    <span class="text-[10px] bg-white/20 px-2 py-0.5 rounded-full">🚕 即時 Call 車</span>
+                </div>
+                <div class="p-3 text-xs space-y-3 divide-y divide-slate-100">
+                    <div class="pt-2">
+                        <div class="font-bold text-slate-800 text-sky-700">17:18 - 19:28 (或 18:30-21:30 中轉) | 🚄 放工搭高鐵</div>
+                        <p class="text-slate-600 mt-0.5">放工後前往香港西九龍站搭乘高鐵直達郴州西站（或經深圳北/廣州南中轉）。</p>
+                    </div>
+                    <div class="pt-2">
+                        <div class="font-bold text-slate-800 text-sky-700">21:40 - 22:15 | 🏨 CALL 滴滴直送郴州市區</div>
+                        <p class="text-slate-600 mt-0.5">出站搭乘滴滴網約車直達郴州市區飯店（車程 15 分鐘，約 RMB ¥25-35）。早點休息補足精神！</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DAY 1 -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                <div class="bg-amber-500 text-white px-4 py-2.5 flex justify-between items-center">
+                    <div>
+                        <span class="text-[10px] font-bold bg-black/20 px-1.5 py-0.5 rounded">Day 1 • 12/25 (五) 聖誕節</span>
+                        <h2 class="text-sm font-bold mt-0.5">高椅嶺奇幻丹霞 ➔ 赴莽山浸懸崖溫泉</h2>
+                    </div>
+                    <span class="text-[10px] bg-white/20 px-2 py-0.5 rounded-full">🚘 包車第 1 天</span>
+                </div>
+                <div class="p-3 text-xs space-y-3 divide-y divide-slate-100">
+                    <div class="pt-2">
+                        <div class="font-bold text-slate-800 text-amber-700">08:30 - 13:00 | 🌄 飛天山高椅嶺丹霞</div>
+                        <p class="text-slate-600 mt-0.5">包車司機至飯店接駕。遊覽巨蜥伏水、懸崖龍脊背棧道。早晨陽光柔和，拍丹霞色彩最美。</p>
+                    </div>
+                    <div class="pt-2">
+                        <div class="font-bold text-slate-800 text-amber-700">13:00 - 16:30 | 🚘 美食與專車赴莽山</div>
+                        <p class="text-slate-600 mt-0.5">享用農家菜後，包車專車直達莽山景區（車程 2.5 小時，行李隨車存放）。</p>
+                    </div>
+                    <div class="pt-2">
+                        <div class="font-bold text-slate-800 text-amber-700">16:30 - 20:30 | ♨️ 入住莽山森林溫泉酒店</div>
+                        <p class="text-slate-600 mt-0.5">入住溫泉飯店，浸泡高空懸崖野奢溫泉，放鬆身心，晚餐享用瑤家土菜。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DAY 2 -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                <div class="bg-indigo-600 text-white px-4 py-2.5 flex justify-between items-center">
+                    <div>
+                        <span class="text-[10px] font-bold bg-black/20 px-1.5 py-0.5 rounded">Day 2 • 12/26 (六)</span>
+                        <h2 class="text-sm font-bold mt-0.5">登五指峰追霧凇冰掛 ➔ 返市區夜遊裕後街</h2>
+                    </div>
+                    <span class="text-[10px] bg-white/20 px-2 py-0.5 rounded-full">🚘 包車第 2 天</span>
+                </div>
+                <div class="p-3 text-xs space-y-3 divide-y divide-slate-100">
+                    <div class="pt-2">
+                        <div class="font-bold text-slate-800 text-indigo-700">08:30 - 14:00 | ❄️ 莽山五指峰追霧凇</div>
+                        <p class="text-slate-600 mt-0.5">乘索道登頂，漫步 8 公里無障礙懸空棧道。海拔 1,900 米山頂極易遇見晶瑩霧凇與冰掛！</p>
+                    </div>
+                    <div class="pt-2">
+                        <div class="font-bold text-slate-800 text-indigo-700">14:30 - 17:00 | 🚘 包車返郴州市區</div>
+                        <p class="text-slate-600 mt-0.5">包車司機載回郴州市區入住精品飯店（包車服務圓滿結束）。</p>
+                    </div>
+                    <div class="pt-2">
+                        <div class="font-bold text-slate-800 text-indigo-700">17:30 - 21:00 | 🏮 夜遊裕後街古街</div>
+                        <p class="text-slate-600 mt-0.5">漫步郴江河畔千年古街，欣賞吊腳樓夜景，晚餐品嚐名菜「郴州燒雞公」。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DAY 3 -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                <div class="bg-emerald-600 text-white px-4 py-2.5 flex justify-between items-center">
+                    <div>
+                        <span class="text-[10px] font-bold bg-black/20 px-1.5 py-0.5 rounded">Day 3 • 12/27 (日)</span>
+                        <h2 class="text-sm font-bold mt-0.5">水墨東江湖漫步 ➔ 品三江魚 ➔ 傍晚返港</h2>
+                    </div>
+                    <span class="text-[10px] bg-white/20 px-2 py-0.5 rounded-full">🚕 即時 Call 車</span>
+                </div>
+                <div class="p-3 text-xs space-y-3 divide-y divide-slate-100">
+                    <div class="pt-2">
+                        <div class="font-bold text-slate-800 text-emerald-700">08:00 - 12:00 | 🌊 冬日水墨東江湖</div>
+                        <p class="text-slate-600 mt-0.5">CALL 滴滴前往東江湖，冬日湖面清冽如鏡，沿步道漫步，感受宛如國畫般的靜謐美景。</p>
+                    </div>
+                    <div class="pt-2">
+                        <div class="font-bold text-slate-800 text-emerald-700">12:00 - 16:30 | 🍜 東江湖三江魚與伴手禮</div>
+                        <p class="text-slate-600 mt-0.5">品嚐三江魚與棲鳳渡魚粉，午後返市區公園散步或採買伴手禮（東江湖蜜桔）。</p>
+                    </div>
+                    <div class="pt-2">
+                        <div class="font-bold text-slate-800 text-emerald-700">18:55 - 21:22 | 🚄 高鐵 G913 順利返港</div>
+                        <p class="text-slate-600 mt-0.5">搭乘滴滴至郴州西站，搭乘 G913 返回香港西九龍，劃下完美句點。</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- TAB 2: 🚄 高鐵時刻 -->
+        <section id="tab-trains" class="tab-content space-y-4">
+            <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-200">
+                <h2 class="text-sm font-bold text-slate-800 border-b border-slate-100 pb-2 mb-3">🚄 12/24 夜去程與 12/27 回程班次</h2>
+                
+                <div class="space-y-4 text-xs">
+                    <div>
+                        <div class="font-bold text-sky-800 bg-sky-50 p-2 rounded mb-2">去程 (12/24 星期四夜)</div>
+                        <div class="space-y-2">
+                            <div class="border border-sky-200 rounded p-2.5 bg-sky-50/30">
+                                <div class="flex justify-between font-bold text-slate-800">
+                                    <span>G6114 (首選直達)</span>
+                                    <span class="text-sky-600">2小時10分</span>
+                                </div>
+                                <div class="text-slate-500 mt-1">17:18 香港西九龍 ➔ 19:28 抵達郴州西</div>
+                                <p class="text-[11px] text-slate-600 mt-1">✓ 適合提早下班出發，抵達後剛好食晚餐宵夜！</p>
+                            </div>
+                            <div class="border border-slate-200 rounded p-2.5">
+                                <div class="flex justify-between font-bold text-slate-800">
+                                    <span>廣州南/深圳北中轉 (備選)</span>
+                                    <span class="text-slate-500">約 2.5小時</span>
+                                </div>
+                                <div class="text-slate-500 mt-1">18:30-19:30 間出發 ➔ 21:00-22:00 抵達郴州西</div>
+                                <p class="text-[11px] text-slate-600 mt-1">✓ 適合 18:00 後放工的旅客，班次極密集。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="font-bold text-emerald-800 bg-emerald-50 p-2 rounded mb-2">回程 (12/27 星期日)</div>
+                        <div class="space-y-2">
+                            <div class="border border-emerald-200 rounded p-2.5 bg-emerald-50/30">
+                                <div class="flex justify-between font-bold text-slate-800">
+                                    <span>G913 (首選推薦)</span>
+                                    <span class="text-emerald-600">2小時27分</span>
+                                </div>
+                                <div class="text-slate-500 mt-1">18:55 郴州西 ➔ 21:22 抵達香港西九龍</div>
+                                <p class="text-[11px] text-slate-600 mt-1">✓ 玩足第三天全天，時間充裕最悠閒。</p>
+                            </div>
+                            <div class="border border-slate-200 rounded p-2.5">
+                                <div class="flex justify-between font-bold text-slate-800">
+                                    <span>G385 (提早返港版)</span>
+                                    <span class="text-slate-500">2小時23分</span>
+                                </div>
+                                <div class="text-slate-500 mt-1">18:18 郴州西 ➔ 20:41 抵達香港西九龍</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 3: 💰 預算試算 -->
+        <section id="tab-budget" class="tab-content space-y-4">
+            <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-200 space-y-4">
+                <h2 class="text-sm font-bold text-slate-800 border-b border-slate-100 pb-2">💰 3 晚 3 日人均預算試算</h2>
+
+                <div>
+                    <div class="flex justify-between items-center mb-1 text-xs">
+                        <span class="font-bold text-slate-700">同行人數：</span>
+                        <span id="mobile-group-val" class="font-extrabold text-sky-600 bg-sky-100 px-2.5 py-0.5 rounded-full">2 人</span>
+                    </div>
+                    <input type="range" id="mobile-group-slider" min="1" max="6" value="2" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-sky-600" oninput="calcMobileBudget()">
+                </div>
+
+                <div class="text-xs space-y-1.5 pt-2 border-t border-slate-100">
+                    <div class="flex justify-between"><span class="text-slate-500">🚄 高鐵往返票：</span><span id="m-cost-hsr" class="font-semibold">HKD $930</span></div>
+                    <div class="flex justify-between"><span class="text-slate-500">🏨 3晚住宿 (1晚快捷+1晚溫泉+1晚市區)：</span><span id="m-cost-hotel" class="font-semibold">HKD $980</span></div>
+                    <div class="flex justify-between"><span class="text-slate-500">🎟️ 門票索道：</span><span id="m-cost-tickets" class="font-semibold">HKD $530</span></div>
+                    <div class="flex justify-between"><span class="text-slate-500">🚘 2天包車費分擔：</span><span id="m-cost-charter" class="font-semibold">HKD $165</span></div>
+                    <div class="flex justify-between"><span class="text-slate-500">🍜 餐飲與滴滴打車：</span><span id="m-cost-food" class="font-semibold">HKD $450</span></div>
+                    <div class="flex justify-between text-sm font-bold pt-2 border-t border-slate-200 text-sky-700 bg-sky-50 px-2 py-1.5 rounded">
+                        <span>人均預算總計：</span>
+                        <span id="m-cost-total">HKD $3,055</span>
+                    </div>
+                </div>
+
+                <div class="chart-container pt-2">
+                    <canvas id="mobileBudgetChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 4: 🎒 裝備 CheckList -->
+        <section id="tab-gear" class="tab-content space-y-4">
+            <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-200 space-y-3">
+                <h2 class="text-sm font-bold text-slate-800 border-b border-slate-100 pb-2">🎒 莽山追霧凇防寒裝備清單</h2>
+                <p class="text-[11px] text-slate-500">點擊框框即可勾選完成項目：</p>
+
+                <div class="space-y-2 text-xs">
+                    <label class="flex items-center gap-2.5 p-2 bg-slate-50 rounded border border-slate-100 cursor-pointer">
+                        <input type="checkbox" class="w-4 h-4 accent-sky-600 rounded">
+                        <span>🧥 <strong>保暖三層穿法</strong>：防風羽絨外套 + 抓絨衣 + 保暖內衣</span>
+                    </label>
+                    <label class="flex items-center gap-2.5 p-2 bg-slate-50 rounded border border-slate-100 cursor-pointer">
+                        <input type="checkbox" class="w-4 h-4 accent-sky-600 rounded">
+                        <span>🦶 <strong>鞋履與冰爪</strong>：防滑登山鞋（山腳可買套鞋底冰爪 RMB ¥10-15）</span>
+                    </label>
+                    <label class="flex items-center gap-2.5 p-2 bg-slate-50 rounded border border-slate-100 cursor-pointer">
+                        <input type="checkbox" class="w-4 h-4 accent-sky-600 rounded">
+                        <span>🧤 <strong>配件三寶</strong>：防水保暖手套 + 防風毛帽 + 保暖圍巾</span>
+                    </label>
+                    <label class="flex items-center gap-2.5 p-2 bg-slate-50 rounded border border-slate-100 cursor-pointer">
+                        <input type="checkbox" class="w-4 h-4 accent-sky-600 rounded">
+                        <span>👙 <strong>溫泉裝備</strong>：泳衣、泳帽、防水手機袋（泡懸崖溫泉用）</span>
+                    </label>
+                    <label class="flex items-center gap-2.5 p-2 bg-slate-50 rounded border border-slate-100 cursor-pointer">
+                        <input type="checkbox" class="w-4 h-4 accent-sky-600 rounded">
+                        <span>📱 <strong>電子防寒</strong>：行動電源 + 暖寶寶（山頂低溫手機容易耗電）</span>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Bottom Navigation Bar for Mobile -->
+    <nav class="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 z-50 shadow-lg">
+        <div class="max-w-md mx-auto flex justify-around text-center text-[10px] py-1.5">
+            <button onclick="switchMobileTab('itinerary')" id="nav-itinerary" class="nav-btn active flex-1 py-1 flex flex-col items-center">
+                <span class="text-base">📅</span>
+                <span>行程細節</span>
+            </button>
+            <button onclick="switchMobileTab('trains')" id="nav-trains" class="nav-btn flex-1 py-1 flex flex-col items-center text-slate-500">
+                <span class="text-base">🚄</span>
+                <span>高鐵班次</span>
+            </button>
+            <button onclick="switchMobileTab('budget')" id="nav-budget" class="nav-btn flex-1 py-1 flex flex-col items-center text-slate-500">
+                <span class="text-base">💰</span>
+                <span>預算試算</span>
+            </button>
+            <button onclick="switchMobileTab('gear')" id="nav-gear" class="nav-btn flex-1 py-1 flex flex-col items-center text-slate-500">
+                <span class="text-base">🎒</span>
+                <span>裝備清單</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- App Logic -->
+    <script>
+        let currentTab = 'itinerary';
+        let mChartInstance = null;
+
+        document.addEventListener("DOMContentLoaded", () => {
+            initMobileChart();
+        });
+
+        function switchMobileTab(tabId) {
+            currentTab = tabId;
+            ['itinerary', 'trains', 'budget', 'gear'].forEach(id => {
+                const section = document.getElementById(`tab-${id}`);
+                const navBtn = document.getElementById(`nav-${id}`);
+                if (id === tabId) {
+                    section.classList.add('active');
+                    navBtn.classList.add('active');
+                    navBtn.classList.remove('text-slate-500');
+                } else {
+                    section.classList.remove('active');
+                    navBtn.classList.remove('active');
+                    navBtn.classList.add('text-slate-500');
+                }
+            });
+            if (tabId === 'budget' && mChartInstance) {
+                mChartInstance.resize();
+            }
+        }
+
+        function calcMobileBudget() {
+            const count = parseInt(document.getElementById('mobile-group-slider').value);
+            document.getElementById('mobile-group-val').innerText = `${count} 人`;
+
+            const hsr = 930;
+            const tickets = 530;
+            const charter = Math.round(600 / count);
+            const hotel = Math.round((Math.ceil(count / 2) * 1960) / count);
+            const food = 450;
+
+            const total = hsr + tickets + charter + hotel + food;
+
+            document.getElementById('m-cost-hsr').innerText = `HKD $${hsr}`;
+            document.getElementById('m-cost-hotel').innerText = `HKD $${hotel}`;
+            document.getElementById('m-cost-tickets').innerText = `HKD $${tickets}`;
+            document.getElementById('m-cost-charter').innerText = `HKD $${charter}`;
+            document.getElementById('m-cost-food').innerText = `HKD $${food}`;
+            document.getElementById('m-cost-total').innerText = `HKD $${total.toLocaleString()}`;
+
+            if (mChartInstance) {
+                mChartInstance.data.datasets[0].data = [hsr, hotel, tickets, charter, food];
+                mChartInstance.update();
+            }
+        }
+
+        function initMobileChart() {
+            const ctx = document.getElementById('mobileBudgetChart').getContext('2d');
+            mChartInstance = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['高鐵票', '3晚住宿', '門票索道', '2天包車', '餐飲打車'],
+                    datasets: [{
+                        data: [930, 980, 530, 165, 450],
+                        backgroundColor: ['#0284c7', '#f59e0b', '#06b6d4', '#8b5cf6', '#10b981'],
+                        borderWidth: 2,
+                        borderColor: '#ffffff'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'bottom', labels: { font: { size: 10 }, boxWidth: 10 } },
+                        tooltip: { callbacks: { label: (ctx) => ` HKD $${ctx.raw}` } }
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>
